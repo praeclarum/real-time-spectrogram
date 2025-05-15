@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background for fullscreen spectrogram */
+    color: white;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#spectrogram {
+    width: 100%;
+    height: 400px;
+    background-color: #1e1e1e;
+    position: relative;
+    overflow: hidden;
+}
+
+#spectrogramCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 1; /* Background layer */
+}
+
+#controls {
+    position: absolute;
+    bottom: 20px; /* Position near the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Overlay layer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    background-color: #21a1f1;
+    opacity: 1;
+}
+
+#output {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#timeResolutionSlider {
+    width: 200px; /* Adjust slider width */
+    cursor: pointer;
+}
+
+#toggleScaleButton {
+    position: absolute;
+    top: 20px; /* Move to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 2; /* Ensure it stays above the canvas */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#toggleScaleButton:hover {
+    background-color: #21a1f1;
+    opacity: 1;
+}
