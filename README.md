@@ -4,4 +4,4 @@ This project is a real-time spectrogram application that captures audio from the
 
 ## Try it Out!
 
-(https://praeclarum.org/real-time-spectrogram/)[https://praeclarum.org/real-time-spectrogram/]
+[https://praeclarum.org/real-time-spectrogram](https://praeclarum.org/real-time-spectrogram/)
